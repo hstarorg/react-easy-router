@@ -1,0 +1,25 @@
+{
+  "name": "react-easy-router",
+  "version": "0.0.1",
+  "description": "The easy use router for react that wrap react-router like vue-router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hstarorg/react-easy-router.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hstarorg/react-easy-router/issues"
+  },
+  "homepage": "https://github.com/hstarorg/react-easy-router#readme",
+  "dependencies": {
+    "query-string": "^6.1.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {}
+}
