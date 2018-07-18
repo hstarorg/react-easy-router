@@ -4,6 +4,8 @@
   "description": "The easy use router for react that wrap react-router like vue-router",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,15 @@
     "query-string": "^6.1.0",
     "react-router-dom": "^4.3.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  }
 }

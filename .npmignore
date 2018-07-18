@@ -1,0 +1,4 @@
+examples/
+.editorconfig
+.prettierrc.js
+__tests__/
