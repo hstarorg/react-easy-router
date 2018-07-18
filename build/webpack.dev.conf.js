@@ -3,7 +3,9 @@ const baseConf = require('./webpack.base.conf');
 
 module.exports = webpackMerge(baseConf, {
   mode: 'development',
+  devtool: 'source-map',
   devServer: {
-    contentBase: './examples'
+    contentBase: './examples',
+    historyApiFallback: true
   }
 });
