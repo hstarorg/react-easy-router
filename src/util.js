@@ -1,3 +1,5 @@
+import queryString from 'query-string';
+
 export const util = {
   /**
    * 是否在浏览器运行
@@ -28,5 +30,19 @@ export const util = {
       return false;
     }
     return window.history && 'pushState' in window.history;
+  },
+  /**
+   * 转换QueryString
+   * @param {*} search 
+   */
+  parseQuery(search) {
+    return queryString.parse(search);
+  },
+  /**
+   * 转换Hash
+   * @param {*} hash 
+   */
+  parseHash(hash) {
+    return queryString.parse(hash);
   }
 };

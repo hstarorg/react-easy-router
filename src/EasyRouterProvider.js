@@ -12,8 +12,6 @@ export class EasyRouterProvider extends Component {
     }).isRequired
   };
 
-  history = null;
-
   constructor(props) {
     super(props);
   }

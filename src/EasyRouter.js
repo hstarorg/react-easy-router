@@ -25,6 +25,13 @@ export class EasyRouter {
     // 创建history对象
     this.history = this._createHistory(this.mode, this.base);
     this.routes = options.routes || [];
+    // 初始化callback数组
+    this.beforeEachCallbacks = [];
+    this.afterEachCallbacks = [];
+    this.history.listen((location, action) => {
+      console.log(location, action);
+      return false;
+    });
   }
 
   _createHistory(mode, basename) {
@@ -42,17 +49,49 @@ export class EasyRouter {
     }
   }
 
-  beforeEach() {}
+  /**
+   * 在每次变化时执行
+   */
+  beforeEach(fn) {}
 
-  afterEach() {}
+  /**
+   * 在每次路由变化完成后执行
+   */
+  onChanged() {}
 
-  push() {}
+  /**
+   * Push路由
+   * @param {*} path
+   * @param {*} state
+   */
+  push(path, state) {
+    this.history.push(path, state);
+  }
 
-  replace() {}
+  /**
+   * 替换路由
+   * @param {*} path
+   * @param {*} state
+   */
+  replace(path, state) {
+    this.history.replace(path, state);
+  }
 
-  go() {}
+  go(n) {
+    this.history.go(n);
+  }
 
-  back() {}
+  /**
+   * 后退
+   */
+  goBack() {
+    this.history.goBack();
+  }
 
-  forward() {}
+  /**
+   * 前进
+   */
+  goForward() {
+    this.history.goForward();
+  }
 }
