@@ -2,3 +2,4 @@ examples/
 .editorconfig
 .prettierrc.js
 __tests__/
+build/

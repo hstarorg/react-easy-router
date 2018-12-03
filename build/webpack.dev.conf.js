@@ -3,7 +3,7 @@ const baseConf = require('./webpack.base.conf');
 
 module.exports = webpackMerge(baseConf, {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'cheap-source-map', //'source-map',
   devServer: {
     contentBase: './examples',
     historyApiFallback: true

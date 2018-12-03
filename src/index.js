@@ -1,6 +1,8 @@
-import { ReactEasyRouter } from './ReactEasyRouter';
+import { EasyRouter } from './EasyRouter';
+import { EasyRouterProvider } from './EasyRouterProvider';
+import { EasyRouterView } from './EasyRouterView';
 
-export { ReactEasyRouter };
+export { EasyRouter, EasyRouterProvider, EasyRouterView };
 
 // declare type RouteConfig = {
 //   path: string,
